@@ -2,7 +2,7 @@
 
 ![FlightAI: Elegant Networking in Swift](nvidia.png)
 
-FlightAI provides a powerful interface for integrating Gemini artificial intelligence capabilities into your iOS app, enabling seamless communication with advanced AI models.
+In today's fast-paced world, having real-time access to flight status is essential for travelers, airlines, and app developers. FlightAI offers an advanced solution for tracking flight information in iOS applications with ease. In this guide, we'll cover the basics of integrating FlightAI into your iOS project, with practical examples and key features that will help you get up and running quickly.
 
 - [Features](#features)
 - [Installation](#installation)
@@ -12,8 +12,9 @@ FlightAI provides a powerful interface for integrating Gemini artificial intelli
 - [Contact](#contact)
 
 ## Features
-- [x] Easy communication with Gemini AI for generating responses.
-- [x] Robust handling of machine learning outputs and AI-driven results.
+- [x] Real-time flight status is crucial for modern travel apps.
+- [x] FlightAI provides a robust, AI-powered solution for tracking and monitoring flights.
+- [x] Installing and integrating FlightAI is quick and straightforward.
       
 ## Installation
 ### CocoaPods
@@ -40,20 +41,12 @@ FlightAI's compact syntax and extensive feature set allow requests with powerful
 ```swift
 import FlightAI
 
-func FlightAIExample() {
-    let FlightAI = FlightAI( apiKey: "nvapi-your Gemini api key");
-                
-     FlightAI.request("taiwan in five words or less") { ( result: String) in
-        print("result: \(result)")
-     }
-        
-     let questions = ["1+1", "1+2", "2+3"]
-     for (index, q) in questions.enumerated() {
-            print("Item \(index): \(q)")
-            FlightAI.request("calculate '\(q)'") { ( result: String) in
-                print("result: \(result)")
-            }
-     }
+func getFlightStatus() {
+  let flightAI = FlightAI()
+  
+  flightAI.getStatus(forFlight: "AA123", date: "2024-10-04") { status in
+    print("Flight Status: \(status)")
+  }
 }
 ```
 
