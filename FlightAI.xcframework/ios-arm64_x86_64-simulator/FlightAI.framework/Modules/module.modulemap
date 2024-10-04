@@ -1,0 +1,6 @@
+framework module FlightAI {
+  umbrella header "FlightAI.h"
+  export *
+
+  module * { export * }
+}
