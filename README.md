@@ -6,7 +6,6 @@ In today's fast-paced world, having real-time access to flight status is essenti
 
 - [Features](#features)
 - [Installation](#installation)
-- [Gemini API Key](#Gemini-API-Key)
 - [Example](#example)
 - [License](#license)
 - [Contact](#contact)
@@ -32,8 +31,6 @@ target 'FlightAIExample' do
 end
 
 ```
-## Gemini API Key
-To get started with FlightAI, get API key at [Gemini](https://www.Gemini.com/en-us/ai/).
 
 ## Example
 FlightAI's compact syntax and extensive feature set allow requests with powerful features like automatic retry to be written in just a few lines of code.
