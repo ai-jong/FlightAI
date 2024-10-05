@@ -22,7 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)clear;
 
 
-- (void)infoWithAirlineCode:(NSString*)air flightNumber:(NSString*)fight response:(void(^)(NSDictionary *d) )cb;
+//- (void)infoWithAirlineCode:(NSString*)air flightNumber:(NSString*)fight response:(void(^)(NSDictionary *d) )cb;
+- (void)infoWithFlightNum:(NSString*)flight response:(void(^)(NSDictionary *d) )cb;
 - (void)infoWithFlightID:(NSString*)url response:(void(^)(NSDictionary *d) )cb;
 
 @end
